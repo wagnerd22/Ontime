@@ -1,0 +1,500 @@
+/* style.css */
+
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    color: #28a745; /* Verde principal */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button.primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #1e7e34;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #28a745;
+    border: 2px solid #28a745;
+}
+
+.button.secondary:hover {
+    background-color: #d4edda;
+    color: #1e7e34;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    display: block;
+}
+
+header .logo img {
+    max-height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/* Hero Section (Página Inicial) */
+.hero {
+    background-image: url('https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons a {
+    margin: 0 10px;
+}
+
+/* Destaques (Página Inicial) */
+.highlights
+/* style.css */
+
+/* Estilos Globais (já definidos anteriormente) */
+
+/* Header (já definido anteriormente) */
+
+/* Hero Section (Página Inicial) (já definido anteriormente) */
+
+/* Destaques (Página Inicial) */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.highlight-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-card i {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.highlight-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    color: #666;
+}
+
+/* Clientes Destaque (Página Inicial) */
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.clients-logos img {
+    max-height: 80px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.clients-logos img:hover {
+    opacity: 1;
+}
+
+.note {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Hero Interno (Páginas Internas) */
+.hero-internal {
+    background-color: #28a745;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background-internal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/11/10/54/industry-2630319_640.jpg'); /* Substitua pela imagem padrão */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.hero-content-internal {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content-internal h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content-internal p {
+    font-size: 1.2rem;
+}
+
+/* Página de Serviços */
+.page-servicos .service-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.page-servicos .service-detail.reversed {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+
+.page-servicos .service-detail.reversed > * {
+    direction: ltr;
+}
+
+.page-servicos .service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-servicos .service-info h2 {
+    text-align: left;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.page-servicos .service-info p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.page-servicos .service-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.page-servicos .service-info ul li {
+    margin-bottom: 5px;
+}
+
+/* Página de Clientes */
+.page-clientes .clients-logos-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.page-clientes .clients-logos-page img {
+    max-height: 100px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.page-clientes .clients-logos-page img:hover {
+    opacity: 1;
+}
+
+.page-clientes .testimonials {
+    margin-top: 40px;
+}
+
+.page-clientes .testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.page-clientes .testimonial-card p.author {
+    text-align: right;
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Página Sobre Nós */
+.page-sobre-nos .about-page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.page-sobre-nos .about-text-full h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.page-sobre-nos .about-text-full p,
+.page-sobre-nos .about-text-full ul {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.page-sobre-nos .about-text-full ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.page-sobre-nos .about-image-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Página de Contato */
+.page-contato .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.page-contato .contact-form h2,
+.page-contato .contact-info h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.page-contato .contact-info p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.page-contato .contact-info i {
+    margin-right: 10px;
+    color: #28a745;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-content > * {
+    margin: 15px;
+}
+
+footer .footer-logo img {
+    max-height: 40px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 15px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #28a745;
+}
+
+footer .footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-social a:hover {
+    color: #28a745;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Estilos para Background das Páginas Internas */
+.hero-internal {
+    /* Você pode adicionar uma cor de fundo verde padrão aqui se desejar */
+}
+
+.page-servicos .hero-background-internal {
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_640.jpg'); /* Substitua pela imagem de serviços */
+}
+
+.page-clientes .hero-background-internal {
+    background-image: url('../img/clientes-banner.jpg'); /* Substitua pela imagem de clientes */
+}
+
+.page-sobre-nos .hero-background-internal {
+    background-image: url('../img/sobre-nos-banner.jpg'); /* Substitua pela imagem sobre nós */
+}
+
+.page-contato .hero-background-internal {
+    background-image: url('../img/contato-banner.jpg'); /* Substitua pela imagem de contato */
+}
